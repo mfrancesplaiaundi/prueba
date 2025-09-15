@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    
+</head>
+<body>
+
+    <form>
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="correo@empresa.com" required><br>
+
+        <!-- Asunto -->
+        <label for="asunto">Asunto:</label><br>
+        <textarea id="asunto" name="asunto" rows="4" cols="50">Pedir presupuesto web
+Solicitar cita previa
+Otro
+        </textarea><br>
+
+        <!-- ¿Cómo nos ha conocido? -->
+        <label>¿Cómo nos ha conocido?</label><br>
+        <input type="radio" id="amigo" name="conocido" value="amigo">
+        <label for="amigo">Un amigo</label><br>
+        <input type="radio" id="google" name="conocido" value="google">
+        <label for="google">Googleando</label><br>
+        <input type="radio" id="buzon" name="conocido" value="buzon">
+        <label for="buzon">Buzón</label><br>
+        <input type="radio" id="otros" name="conocido" value="otros">
+        <label for="otros">Otros</label><br><br>
+
+        <!-- Mensaje -->
+        <label for="mensaje">Escribe tu mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+
+        <!-- Aceptar términos -->
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">He leído y acepto el <a href="#">aviso legal</a> y la <a href="#">política de privacidad</a>.</label><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
